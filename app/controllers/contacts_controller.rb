@@ -53,6 +53,6 @@ class ContactsController < ApplicationController
       #  :kind_id,
       #  phones_attributes: [:id, :number, :_destroy]
       ActiveModelSerializers::Deserialization.jsonapi_parse(params)
-        )
+        
     end
 end
