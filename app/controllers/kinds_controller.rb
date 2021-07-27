@@ -45,6 +45,8 @@ class KindsController < ApplicationController
         @kind = Contact.find(params[:contact_id]).kind
         return @kind
       end
+
+      @kind = Kind.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
