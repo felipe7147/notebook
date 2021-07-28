@@ -4,7 +4,9 @@ class KindsController < ApplicationController
   # http_basic_authenticate_with name: "jack", password: "secret"
 
   include ActionController::HttpAuthentication::Digest::ControllerMethods
-  USERS = { "jack" => Digest::MD5.hexdigest(["jack","Application","secret"].join(":"))}
+  USERS = { "jack" => Digest::MD5.hexdigest(["jack","Application","secret"].join(":"))}  #Autenticação
+
+
 
   before_action :authenticate
   before_action :set_kind, only: [:show, :update, :destroy]
