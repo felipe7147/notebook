@@ -11,8 +11,8 @@ gem 'rails-i18n'
 gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
-
 gem 'jwt'
+gem 'devise_token_auth'
 
 gem 'foreman'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
