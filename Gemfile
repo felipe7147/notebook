@@ -15,6 +15,8 @@ gem 'jwt'
 gem 'devise_token_auth'
 gem 'devise-i18n'
 gem 'versionist', '~> 1.5.0'
+gem 'kaminari'
+gem 'api-pagination'
 
 gem 'foreman'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
