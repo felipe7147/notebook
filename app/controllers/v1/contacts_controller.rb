@@ -7,8 +7,13 @@ module V1
     def index
       @contacts = Contact.all.page(params[:page].try(:[], :number))
 
-      render json: @contacts #, methods: :birthdate_br #[:hello, :i18n]
+     # Cache-Control -- expires_in 30.seconds , public: true 
+
+      if stale?(etag: @contacts )
+        render json: @contacts #, methods: :birthdate_br #[:hello, :i18n]
+      end
       #paginate json: @contacts #, methods: :birthdate_br #[:hello, :i18n]
+
 
     end
 
