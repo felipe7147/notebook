@@ -19,7 +19,7 @@ module V1
 
     # GET /contacts/1
     def show
-      render json: @contact, include: [:kind, :address, :phones] #, meta: {author: "Felipe Almeida"}  #, include: [:kind, :phones]
+      render json: @contact #, include: [:kind, :address, :phones] #, meta: {author: "Felipe Almeida"}  #, include: [:kind, :phones]
     end
 
     # POST /contacts
