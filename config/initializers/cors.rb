@@ -15,4 +15,7 @@
    end
  end
 
-Rails.application.config.middleware.use AppName , "Notebook API - OK!"
+
+unless Rails.env.test?
+  Rails.application.config.middleware.use AppName , "Notebook API - OK!"
+end

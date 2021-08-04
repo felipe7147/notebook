@@ -46,6 +46,7 @@ group :development, :test do
   gem 'faker'
   # Rails >= 3 pry initializer
   gem 'pry-rails', :group => :development
+  gem 'rspec-rails', '~> 3.5'
 end
 
 group :development do
